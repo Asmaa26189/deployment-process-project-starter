@@ -57,13 +57,41 @@ jobs:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
-            echo "# TODO: Install, build, deploy in both apps"
+            echo "# TODO: Install, build, deploy in both apps npm run api:install"
             npm run api:install
+      - run:
+          name: Deploy App
+             # TODO: Install, build, deploy in both apps
+          command: |
+            echo "# TODO: Install, build, deploy in both apps npm run api:build"
             npm run api:build
+       - run:
+          name: Deploy App
+             # TODO: Install, build, deploy in both apps
+          command: |
+            echo "# TODO: Install, build, deploy in both apps npm run api:deploy"
             npm run api:deploy
+       - run:
+          name: Deploy App
+             # TODO: Install, build, deploy in both apps
+          command: |
+            echo "# TODO: Install, build, deploy in both apps npm run frontend:install"
             npm run frontend:install
+            
+       - run:
+          name: Deploy App
+             # TODO: Install, build, deploy in both apps
+          command: |
+            echo "# TODO: Install, build, deploy in both apps npm run frontend:build"
             npm run frontend:build
+        - run:
+          name: Deploy App
+             # TODO: Install, build, deploy in both apps
+          command: |
+            echo "# TODO: Install, build, deploy in both apps npm run frontend:deploy"
             npm run frontend:deploy
+            
+              
 workflows:
   udagram:
     jobs:
