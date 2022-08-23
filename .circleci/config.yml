@@ -57,38 +57,17 @@ jobs:
           name: Deploy App1
           # TODO: Install, build, deploy in both apps
           command: |
-            echo "# TODO: Install, build, deploy in both apps npm run api:install"
+            echo "# TODO: Install, build, deploy in both apps"
             npm run api:install
-      - run:
-          name: Deploy App2
-             # TODO: Install, build, deploy in both apps
-          command: |
-            echo "# TODO: Install, build, deploy in both apps npm run api:build"
+            echo "api build"
             npm run api:build
-       - run:
-          name: Deploy App3
-             # TODO: Install, build, deploy in both apps
-          command: |
-            echo "# TODO: Install, build, deploy in both apps npm run api:deploy"
+            echo "api deploy"
             npm run api:deploy
-       - run:
-          name: Deploy App4
-             # TODO: Install, build, deploy in both apps
-          command: |
-            echo "# TODO: Install, build, deploy in both apps npm run frontend:install"
+            echo "front int"
             npm run frontend:install
-            
-       - run:
-          name: Deploy App5
-             # TODO: Install, build, deploy in both apps
-          command: |
-            echo "# TODO: Install, build, deploy in both apps npm run frontend:build"
+            echo "front build"
             npm run frontend:build
-        - run:
-          name: Deploy App6
-             # TODO: Install, build, deploy in both apps
-          command: |
-            echo "# TODO: Install, build, deploy in both apps npm run frontend:deploy"
+            echo "front:deploy"
             npm run frontend:deploy
             
               
