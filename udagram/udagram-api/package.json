@@ -33,8 +33,7 @@
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^5.21.4",
-    "sequelize-typescript": "^0.6.9",
-    "bestzip": "^2.2.1"
+    "sequelize-typescript": "^0.6.9"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.26",
@@ -51,6 +50,7 @@
     "eslint-config-google": "^0.14.0",
     "mocha": "^6.1.4",
     "ts-node-dev": "^1.0.0-pre.32",
-    "typescript": "^3.9.10"
+    "typescript": "^3.9.10",
+    "bestzip": "^2.2.1"
   }
 }
