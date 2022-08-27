@@ -1,3 +1,4 @@
+// add database port in this file  as dbport from configFile
 import { Sequelize } from "sequelize-typescript";
 import { config } from "./config/config";
 
