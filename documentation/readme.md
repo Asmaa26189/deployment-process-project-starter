@@ -96,41 +96,41 @@ Your application must make use of the following:
 
 ## updates:
 I have made some updates and app in some files
--udagram>udagram-api>bin>deploy.sh:
+### udagram>udagram-api>bin>deploy.sh:
     cd www
     printenv > .env
     eb init $EB_APP --region $AWS_REGION
     eb deploy $EB_ENV
--udagram>udagram-api>sequelize.ts
--udagram>udagram-api>config>config.ts
--udagram>udagram-frontend>bin>deploy.sh:
+### udagram>udagram-api>sequelize.ts
+### udagram>udagram-api>config>config.ts
+### udagram>udagram-frontend>bin>deploy.sh:
     aws s3 cp --recursive --acl public-read ./www s3://$AWS_BUCKET/
     aws s3 cp --acl public-read --cache-control="max-age=0, no-cache, no-store, must-revalidate" ./www/index.html s3://$AWS_BUCKET/
--udagram>udagram-frontend>src>envrionments>environment.prod.ts
--udagram>udagram-frontend>src>envrionments>environment.ts
+### udagram>udagram-frontend>src>envrionments>environment.prod.ts
+### udagram>udagram-frontend>src>envrionments>environment.ts
 **Note** add documentation folder with all screennshots and diagrams
 
 ## links :
--RDS:
+### RDS:
 **Endpoint & port**
     -Endpoint: udagram.ccetnq1xvv0w.us-east-1.rds.amazonaws.com
     -Port:5432
--EBS:
+### EBS:
 **Elastic Beanstalk**
     -HostLUdagramproject-env.eba-jh6hgzru.us-east-1.elasticbeanstalk.com
     -Application name: udagramProject
--S3:
+### S3:
 **Bucket**
   -AWS Region: US East (N. Virginia) us-east-1
   -Amazon Resource Name (ARN): arn:aws:s3:::elasticbeanstalk-us-east-1-893271596042
   -Bucket website endpoint:http://elasticbeanstalk-us-east-1-893271596042.s3-website-us-east-1.amazonaws.com 
 
 ## Steps :
-1.create AWS RDS database and s3 buckect.
-2.Using circleci pipeline with my project github.
-3.Add all environments variables.
-4.Check pipeline is success.
-5.check AWS EBS health is OK.
+    1.create AWS RDS database and s3 buckect.
+    2.Using circleci pipeline with my project github.
+    3.Add all environments variables.
+    4.Check pipeline is success.
+    5.check AWS EBS health is OK.
 
 **all this point explained with screenshots in documentaion folder**
 
